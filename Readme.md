@@ -17,12 +17,13 @@ Implement a unified PyTorch/HuggingFace model for simultaneous NER and Classific
 Evaluate the trade-offs between single-task and multi-task performance.
 Provide a quantitative analysis of task interaction.
 ## Dataset:
-wget -O train.jsonl "https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/data/train.jsonl"
-wget -O dev.jsonl   "https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/data/dev.jsonl"
-wget -O test.jsonl  "https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/data/test.jsonl"
-
-wget -O ent_types.jsonl"https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/ent_types.jsonl"
-wget -O rel_types.jsonl "https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/rel_types.jsonl" 
+Use the NEREL public dataset in JSONL format: train, dev, test. This dataset contains texts, entities (offset strings), and relationships/events, and can be downloaded on [huggingface](https://huggingface.co/datasets/iluvvatar/NEREL).:
+wget -O train.jsonl "https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/data/train.jsonl"  
+wget -O dev.jsonl   "https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/data/dev.jsonl"  
+wget -O test.jsonl  "https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/data/test.jsonl"  
+  
+wget -O ent_types.jsonl"https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/ent_types.jsonl"  
+wget -O rel_types.jsonl "https://huggingface.co/datasets/iluvvatar/NEREL/resolve/main/rel_types.jsonl"  
 ## Architecture:
 
 ## Installation & Usage: 
